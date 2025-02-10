@@ -16,8 +16,24 @@ public class EventSystem_Attendance {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        Splash splash = new Splash();
+        SplashScreen splash = new SplashScreen();
         splash.setVisible(true);
+        try {
+            for(int i = 0; i <= 100; ++i) {
+                Thread.sleep(60);
+                splash.progressPercentage.setText(Integer.toString(i)+"%");
+                splash.progressBar.setValue(i);
+
+                
+                if(i == 100) {
+                    splash.dispose();
+                    Login login = new Login();
+                    login.setVisible(true);
+                }
+            }
+        } catch (Exception e){
+            System.out.println("Error");
+        }
     }
     
 }
