@@ -68,7 +68,7 @@ public class SplashScreen extends javax.swing.JFrame {
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/splashbg (4).jpg"))); // NOI18N
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(20, -50, 1430, 930);
+        jLabel3.setBounds(10, -50, 1430, 930);
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 0, 1450, 900));
 

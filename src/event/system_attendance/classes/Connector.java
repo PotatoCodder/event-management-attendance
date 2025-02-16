@@ -1,4 +1,4 @@
-package event.system_attendance;
+package event.system_attendance.classes;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -6,8 +6,8 @@ import java.sql.SQLException;
 
 public class Connector {
     private static final String URL = "jdbc:mysql://localhost:3308/attendance_system"; // Replace with your DB name
-    private static final String USER = "root";  // Default XAMPP username
-    private static final String PASSWORD = "";  // Leave empty if you didn't set a password
+    private static final String USER = "root"; 
+    private static final String PASSWORD = ""; 
 
     public static Connection connect() {
         try {
@@ -21,6 +21,6 @@ public class Connector {
     }
 
     public static void main(String[] args) {
-        connect(); // Test connection
+        connect(); 
     }
 }

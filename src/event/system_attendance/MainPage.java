@@ -29,7 +29,6 @@ public class MainPage extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        exitButton = new javax.swing.JButton();
         viewEventBtn = new javax.swing.JButton();
         signUpBtn = new javax.swing.JButton();
         profileBtn = new javax.swing.JButton();
@@ -38,6 +37,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
+        backBtn = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -46,14 +46,6 @@ public class MainPage extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(51, 51, 255));
         jPanel1.setToolTipText("");
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        exitButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/exit.png"))); // NOI18N
-        exitButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                exitButtonActionPerformed(evt);
-            }
-        });
-        jPanel1.add(exitButton, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 20, -1, -1));
 
         viewEventBtn.setBackground(new java.awt.Color(0, 102, 255));
         viewEventBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/view.png"))); // NOI18N
@@ -110,22 +102,23 @@ public class MainPage extends javax.swing.JFrame {
         jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("View Event");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 670, -1, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 670, -1, -1));
+
+        backBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/exit.png"))); // NOI18N
+        backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backBtnMouseClicked(evt);
+            }
+        });
+        jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 10, -1, 30));
 
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/mainPage.png"))); // NOI18N
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, -140, 1380, 1170));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -130, 1380, 1170));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
-        // TODO add your handling code here:
-        Login login = new Login();
-        this.dispose();
-        login.setVisible(true);
-    }//GEN-LAST:event_exitButtonActionPerformed
 
     private void viewEventBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewEventBtnActionPerformed
         // TODO add your handling code here:
@@ -152,7 +145,17 @@ public class MainPage extends javax.swing.JFrame {
 
     private void addEventBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addEventBtnActionPerformed
         // TODO add your handling code here:
+        AddEvent add = new AddEvent();
+        this.dispose();
+        add.setVisible(true);
     }//GEN-LAST:event_addEventBtnActionPerformed
+
+    private void backBtnMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backBtnMouseClicked
+        // TODO add your handling code here:
+        LoginPage login = new LoginPage();
+        this.dispose();
+        login.setVisible(true);
+    }//GEN-LAST:event_backBtnMouseClicked
 
     /**
      * @param args the command line arguments
@@ -191,7 +194,7 @@ public class MainPage extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addEventBtn;
-    private javax.swing.JButton exitButton;
+    private javax.swing.JLabel backBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
