@@ -47,7 +47,7 @@
               <Color blue="ff" green="66" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/event/system_attendance/view.png"/>
+              <Image iconType="3" name="/event/system_UI/view.png"/>
             </Property>
           </Properties>
           <Events>
@@ -65,7 +65,7 @@
               <Color blue="ff" green="66" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/event/system_attendance/attendance (3).png"/>
+              <Image iconType="3" name="/event/system_UI/attendance (3).png"/>
             </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
           </Properties>
@@ -84,7 +84,7 @@
               <Color blue="ff" green="66" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/event/system_attendance/user.png"/>
+              <Image iconType="3" name="/event/system_UI/user.png"/>
             </Property>
           </Properties>
           <Events>
@@ -102,7 +102,7 @@
               <Color blue="ff" green="66" red="33" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/event/system_attendance/add-event.png"/>
+              <Image iconType="3" name="/event/system_UI/add-event.png"/>
             </Property>
           </Properties>
           <Events>
@@ -181,7 +181,7 @@
         <Component class="javax.swing.JLabel" name="backBtn">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/event/system_attendance/exit.png"/>
+              <Image iconType="3" name="/event/system_UI/exit.png"/>
             </Property>
           </Properties>
           <Events>
@@ -196,7 +196,7 @@
         <Component class="javax.swing.JLabel" name="jLabel2">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/event/system_attendance/mainPage.png"/>
+              <Image iconType="3" name="/event/system_UI/mainPage.png"/>
             </Property>
           </Properties>
           <Constraints>

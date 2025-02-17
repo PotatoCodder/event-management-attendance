@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package event.system_attendance;
+package event.system_UI;
 
 import event.system_attendance.classes.Login;
 
@@ -99,20 +99,20 @@ public class LoginPage extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(3286, 1391, -1, -1));
 
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/attendance (1).png"))); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/attendance (1).png"))); // NOI18N
         getContentPane().add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, -1, -1));
 
         jButton1.setBackground(new java.awt.Color(242, 242, 242));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/exit.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/exit.png"))); // NOI18N
         jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1270, 10, 80, 30));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1320, 10, 30, 30));
 
-        bgImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/3747425.jpg"))); // NOI18N
+        bgImg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/3747425.jpg"))); // NOI18N
         bgImg.setText("jLabel1");
         getContentPane().add(bgImg, new org.netbeans.lib.awtextra.AbsoluteConstraints(321, -90, 3030, -1));
 
@@ -148,20 +148,21 @@ public class LoginPage extends javax.swing.JFrame {
 
     private void signInButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signInButton1ActionPerformed
         // TODO add your handling code here:
-        String username = userTextField.getText();
-        String password = new String(passTextField.getPassword());
+    String username = userTextField.getText();
+    String password = new String(passTextField.getPassword());
 
-        Login login = new Login(); // Create an instance of Login class
-        boolean isValid = login.authenticateUser(username, password);
+    // Create an instance of the Login class and authenticate the user
+    Login login = new Login();
+    boolean isValid = login.authenticateUser(username, password);
 
-        if (isValid) {
-            JOptionPane.showMessageDialog(this, "Login Successful!");
-            this.dispose();
-            MainPage page = new MainPage();
-            page.setVisible(true);
-        } else {
-            JOptionPane.showMessageDialog(this, "Invalid username or password!", "Login Failed", JOptionPane.ERROR_MESSAGE);
-        }
+    if (isValid) {
+        JOptionPane.showMessageDialog(this, "Login Successful!");
+        this.dispose();  // Close the login page
+        MainPage page = new MainPage();  // Open the main page
+        page.setVisible(true);
+    } else {
+        JOptionPane.showMessageDialog(this, "Invalid username or password!", "Login Failed", JOptionPane.ERROR_MESSAGE);
+    }
     }//GEN-LAST:event_signInButton1ActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package event.system_attendance;
+package event.system_UI;
 
 /**
  *
@@ -48,7 +48,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         viewEventBtn.setBackground(new java.awt.Color(0, 102, 255));
-        viewEventBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/view.png"))); // NOI18N
+        viewEventBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/view.png"))); // NOI18N
         viewEventBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 viewEventBtnActionPerformed(evt);
@@ -57,7 +57,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel1.add(viewEventBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 430, 240, 220));
 
         signUpBtn.setBackground(new java.awt.Color(0, 102, 255));
-        signUpBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/attendance (3).png"))); // NOI18N
+        signUpBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/attendance (3).png"))); // NOI18N
         signUpBtn.setToolTipText("");
         signUpBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -67,7 +67,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel1.add(signUpBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 110, 230, 240));
 
         profileBtn.setBackground(new java.awt.Color(0, 102, 255));
-        profileBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/user.png"))); // NOI18N
+        profileBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/user.png"))); // NOI18N
         profileBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 profileBtnActionPerformed(evt);
@@ -76,7 +76,7 @@ public class MainPage extends javax.swing.JFrame {
         jPanel1.add(profileBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 110, 240, 240));
 
         addEventBtn.setBackground(new java.awt.Color(51, 102, 255));
-        addEventBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/add-event.png"))); // NOI18N
+        addEventBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/add-event.png"))); // NOI18N
         addEventBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 addEventBtnActionPerformed(evt);
@@ -104,7 +104,7 @@ public class MainPage extends javax.swing.JFrame {
         jLabel5.setText("View Event");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 670, -1, -1));
 
-        backBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/exit.png"))); // NOI18N
+        backBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/exit.png"))); // NOI18N
         backBtn.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 backBtnMouseClicked(evt);
@@ -112,7 +112,7 @@ public class MainPage extends javax.swing.JFrame {
         });
         jPanel1.add(backBtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(1330, 10, -1, 30));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/mainPage.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/mainPage.png"))); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -130, 1380, 1170));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);

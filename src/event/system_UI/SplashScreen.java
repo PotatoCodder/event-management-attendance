@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package event.system_attendance;
+package event.system_UI;
 
 /**
  *LUBOT NAKO PUTI ADRIAN LOVE ADOT
@@ -66,7 +66,7 @@ public class SplashScreen extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(620, 330, 190, 50);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_attendance/splashbg (4).jpg"))); // NOI18N
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/event/system_UI/splashbg (4).jpg"))); // NOI18N
         jPanel1.add(jLabel3);
         jLabel3.setBounds(10, -50, 1430, 930);
 

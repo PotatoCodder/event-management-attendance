@@ -1,4 +1,4 @@
-package event.system_attendance;
+package event.system_UI;
 public class EventSystem_Attendance {
 
     public static void main(String[] args) {
